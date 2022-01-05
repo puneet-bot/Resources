@@ -6,15 +6,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="index.css">
   </head>
-  <body style="margin: 0px; padding: 0px;">
-    <div class="card" style="width:25rem; margin:10px; padding:10px">
+  <body>
+    <nav class="container" >
+      <div id="my-navbar">
+        <li>Course Overview</li>
+        <li>Content</li>
+        <li>References</li>
+      </div>
+    </nav>
+    <div class="card my-card">
         <h5 class="card-title">Lecture 1 : Flowcharts</h5>
         <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-          <div><span style="color: rgba(220, 20, 60, 0.527);">Release Date</span><br>26 Apr'21<br>12:00 AM</div>
-          <div><span style="color: rgba(220, 20, 60, 0.527);">Deadline</span><br>26 Apr'21<br>11:59 PM</div>
-          <div><span style="color: rgba(220, 20, 60, 0.527);">Weightage</span><br>2</div>
+          <div><span class="topic-head">Release Date</span><br>26 Apr'21<br>12:00 AM</div>
+          <div><span class="topic-head">Deadline</span><br>26 Apr'21<br>11:59 PM</div>
+          <div><span class="topic-head">Weightage</span><br>2</div>
           <img src="https://cdn5.vectorstock.com/i/1000x1000/88/79/m-monogram-module-build-logo-box-letters-vector-25188879.jpg" height="80" width="80" style="margin-top: -30px; border-radius: 50%;">
+        </div>
+        <div class="progress" id="special-progress" style="height: 2px;">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
